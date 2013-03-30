@@ -7,11 +7,7 @@
 //
 
 #import "MainViewController.h"
-
-#include "array.h"
-#include "buffer.h"
-#include "markdown.h"
-#include "renderers.h"
+#import "GHMarkdownParser.h"
 
 @interface DataObject : NSObject
 @property (nonatomic, strong) NSString *name;
@@ -73,7 +69,7 @@ static NSString * const kObjectIncludanceRegEx = @"((@include\\s)([A-Za-z0-9_-]+
         
         NSMutableString *str = [textView.text mutableCopy];
         [str insertString:indentations atIndex:range.location];
-        //textView.text = str;
+        textView.text = str;
         
         //textView.selectedRange = selectionRange;
     }
@@ -96,31 +92,37 @@ static NSString * const kObjectIncludanceRegEx = @"((@include\\s)([A-Za-z0-9_-]+
     rawText = [self handleObjects:rawText];
     rawText = [self handleIncludance:rawText];
     
+    rawText = [self indentText:rawText];
+    
     NSString *html = [self generateHTMLMarkdownForString:rawText];
     [self.previewWebView loadHTMLString:html baseURL:nil];
 }
 
+- (NSString *)indentText:(NSString *)text {
+    
+    __block int indentaitons = 0;
+    [text enumerateLinesUsingBlock:^(NSString *line, BOOL *stop) {
+        NSString *spaces = @"";
+        for (int j = 0; j < indentaitons ; j++) {
+            spaces = [spaces stringByAppendingFormat:@" "];
+        }
+        
+        for (int i = 0; i < line.length; i++) {
+            unichar c = [line characterAtIndex:i];
+            if (c == '{') {
+                indentaitons++;
+            }
+            else if (c == '}') {
+                indentaitons--;
+            }
+        }
+    }];
+    
+    return text;
+}
+
 - (NSString *)generateHTMLMarkdownForString:(NSString *)text {
-    NSString *rawMarkdown = text;
-    const char * prose = [rawMarkdown UTF8String];
-    struct buf *ib, *ob;
-    
-    unsigned long length = rawMarkdown.length + 1;
-    
-    ib = bufnew(length);
-    bufgrow(ib, length);
-    memcpy(ib->data, prose, length);
-    ib->size = length;
-    
-    ob = bufnew(64);
-    markdown(ob, ib, &mkd_xhtml);
-    
-    NSString *shinyNewHTML = [NSString stringWithUTF8String: ob->data];
-    
-    bufrelease(ib);
-    bufrelease(ob);
-    
-    return shinyNewHTML;
+    return text.flavoredHTMLStringFromMarkdown;
 }
 
 - (NSString *)handleObjects:(NSString *)rawText {
