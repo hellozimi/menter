@@ -16,11 +16,7 @@
 		F41326A9170398AD0078D8D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41326A6170398AD0078D8D3 /* AppDelegate.m */; };
 		F41326AA170398AD0078D8D3 /* UIKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41326A8170398AD0078D8D3 /* UIKitAppDelegate.m */; };
 		F41326AD170398CE0078D8D3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41326AC170398CE0078D8D3 /* MainViewController.m */; };
-		F496830817066D350051BA06 /* array.c in Sources */ = {isa = PBXBuildFile; fileRef = F49682F817066D350051BA06 /* array.c */; };
-		F496830B17066D350051BA06 /* buffer.c in Sources */ = {isa = PBXBuildFile; fileRef = F49682FC17066D350051BA06 /* buffer.c */; };
-		F496831117066D350051BA06 /* markdown.c in Sources */ = {isa = PBXBuildFile; fileRef = F496830317066D350051BA06 /* markdown.c */; };
-		F496831217066D350051BA06 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = F496830517066D350051BA06 /* README.md */; };
-		F496831317066D350051BA06 /* renderers.c in Sources */ = {isa = PBXBuildFile; fileRef = F496830617066D350051BA06 /* renderers.c */; };
+		F496841A170671F40051BA06 /* libGHMarkdownParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4968419170671A50051BA06 /* libGHMarkdownParser.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -30,6 +26,20 @@
 			proxyType = 2;
 			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
 			remoteInfo = UIKit;
+		};
+		F4968418170671A50051BA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A7C525F213E6FE1A0003EEE5;
+			remoteInfo = GHMarkdownParser;
+		};
+		F496841B1706720C0051BA06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A7C525F113E6FE1A0003EEE5;
+			remoteInfo = GHMarkdownParser;
 		};
 /* End PBXContainerItemProxy section */
 
@@ -52,15 +62,7 @@
 		F41326A8170398AD0078D8D3 /* UIKitAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKitAppDelegate.m; sourceTree = "<group>"; };
 		F41326AB170398CE0078D8D3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
 		F41326AC170398CE0078D8D3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
-		F49682F817066D350051BA06 /* array.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = array.c; sourceTree = "<group>"; };
-		F49682F917066D350051BA06 /* array.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = array.h; sourceTree = "<group>"; };
-		F49682FC17066D350051BA06 /* buffer.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = buffer.c; sourceTree = "<group>"; };
-		F49682FD17066D350051BA06 /* buffer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = buffer.h; sourceTree = "<group>"; };
-		F496830317066D350051BA06 /* markdown.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = markdown.c; sourceTree = "<group>"; };
-		F496830417066D350051BA06 /* markdown.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = markdown.h; sourceTree = "<group>"; };
-		F496830517066D350051BA06 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README.md; sourceTree = "<group>"; };
-		F496830617066D350051BA06 /* renderers.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = renderers.c; sourceTree = "<group>"; };
-		F496830717066D350051BA06 /* renderers.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = renderers.h; sourceTree = "<group>"; };
+		F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GHMarkdownParser.xcodeproj; path = Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +70,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F496841A170671F40051BA06 /* libGHMarkdownParser.a in Frameworks */,
 				F413269B170396C50078D8D3 /* UIKit.framework in Frameworks */,
 				F41323AF1703965F0078D8D3 /* Cocoa.framework in Frameworks */,
 			);
@@ -96,6 +99,7 @@
 		F41323AD1703965F0078D8D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */,
 				F4132695170396AE0078D8D3 /* UIKit.xcodeproj */,
 				F41323AE1703965F0078D8D3 /* Cocoa.framework */,
 				F41323B01703965F0078D8D3 /* Other Frameworks */,
@@ -118,7 +122,6 @@
 			children = (
 				F413269F1703988A0078D8D3 /* Classes */,
 				F41323C31703965F0078D8D3 /* MainMenu.xib */,
-				F49682F617066D350051BA06 /* Frameworks */,
 				F41323B51703965F0078D8D3 /* Supporting Files */,
 			);
 			path = Document;
@@ -197,28 +200,12 @@
 			path = Application;
 			sourceTree = "<group>";
 		};
-		F49682F617066D350051BA06 /* Frameworks */ = {
+		F4968415170671A50051BA06 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F49682F717066D350051BA06 /* libupskirt */,
+				F4968419170671A50051BA06 /* libGHMarkdownParser.a */,
 			);
-			path = Frameworks;
-			sourceTree = "<group>";
-		};
-		F49682F717066D350051BA06 /* libupskirt */ = {
-			isa = PBXGroup;
-			children = (
-				F49682F817066D350051BA06 /* array.c */,
-				F49682F917066D350051BA06 /* array.h */,
-				F49682FC17066D350051BA06 /* buffer.c */,
-				F49682FD17066D350051BA06 /* buffer.h */,
-				F496830317066D350051BA06 /* markdown.c */,
-				F496830417066D350051BA06 /* markdown.h */,
-				F496830517066D350051BA06 /* README.md */,
-				F496830617066D350051BA06 /* renderers.c */,
-				F496830717066D350051BA06 /* renderers.h */,
-			);
-			path = libupskirt;
+			name = Products;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +222,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				F496841C1706720C0051BA06 /* PBXTargetDependency */,
 			);
 			name = Document;
 			productName = Document;
@@ -263,6 +251,10 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
+					ProductGroup = F4968415170671A50051BA06 /* Products */;
+					ProjectRef = F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */;
+				},
+				{
 					ProductGroup = F4132696170396AE0078D8D3 /* Products */;
 					ProjectRef = F4132695170396AE0078D8D3 /* UIKit.xcodeproj */;
 				},
@@ -282,6 +274,13 @@
 			remoteRef = F4132699170396AF0078D8D3 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
+		F4968419170671A50051BA06 /* libGHMarkdownParser.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libGHMarkdownParser.a;
+			remoteRef = F4968418170671A50051BA06 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
 /* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
@@ -292,7 +291,6 @@
 				F41323B91703965F0078D8D3 /* InfoPlist.strings in Resources */,
 				F41323BF1703965F0078D8D3 /* Credits.rtf in Resources */,
 				F41323C51703965F0078D8D3 /* MainMenu.xib in Resources */,
-				F496831217066D350051BA06 /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,14 +305,18 @@
 				F41326A9170398AD0078D8D3 /* AppDelegate.m in Sources */,
 				F41326AA170398AD0078D8D3 /* UIKitAppDelegate.m in Sources */,
 				F41326AD170398CE0078D8D3 /* MainViewController.m in Sources */,
-				F496830817066D350051BA06 /* array.c in Sources */,
-				F496830B17066D350051BA06 /* buffer.c in Sources */,
-				F496831117066D350051BA06 /* markdown.c in Sources */,
-				F496831317066D350051BA06 /* renderers.c in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F496841C1706720C0051BA06 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = GHMarkdownParser;
+			targetProxy = F496841B1706720C0051BA06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		F41323B71703965F0078D8D3 /* InfoPlist.strings */ = {
@@ -409,8 +411,17 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Document/Document-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser\"",
+					"\"$(SRCROOT)/Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser/Foundation and Class Additions\"",
+				);
 				INFOPLIST_FILE = "Document/Document-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Modules/GHMarkdownParser\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
@@ -423,8 +434,17 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "Document/Document-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"\"$(SRCROOT)/Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser\"",
+					"\"$(SRCROOT)/Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser/Foundation and Class Additions\"",
+				);
 				INFOPLIST_FILE = "Document/Document-Info.plist";
+				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Modules/GHMarkdownParser\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				OTHER_LDFLAGS = (
+					"-Objc",
+					"-all_load",
+				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
