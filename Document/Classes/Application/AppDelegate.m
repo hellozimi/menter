@@ -7,14 +7,30 @@
 //
 
 #import "AppDelegate.h"
-#import "UIKitAppDelegate.h"
+#import "INAppStoreWindow.h"
 
-@implementation AppDelegate
+@implementation AppDelegate {
+    //NSDocumentController *_documentController;
+}
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
+    /*
+    self.windowController = [[EditingWindowController alloc] initWithWindowNibName:@"EditingWindowController"];
     
-    _appDelegate = [[UIKitAppDelegate alloc] init];
-    [_UIKitView launchApplicationWithDelegate:_appDelegate afterDelay:0.1];
+    INAppStoreWindow *aWindow = (INAppStoreWindow*)[[self windowController] window];
+    aWindow.titleBarHeight = 48.0;
+    
+    [self.windowController showWindow:self];
+    [self.windowController.window makeKeyAndOrderFront:self];
+    */
+}
+
+- (void)applicationWillTerminate:(NSNotification *)notification {
+    NSLog(@"Will quit");
+}
+
+- (NSApplicationTerminateReply)applicationShouldTerminate:(NSApplication *)sender {
+    return NSTerminateNow;
 }
 
 @end

@@ -7,13 +7,12 @@
 //
 
 #import <Cocoa/Cocoa.h>
-#import <UIKit/UIKitView.h>
 
 @class UIKitAppDelegate;
 @interface AppDelegate : NSObject <NSApplicationDelegate>
 
-@property (assign) IBOutlet NSWindow *window;
-@property (assign) IBOutlet UIKitView *UIKitView;
 @property (nonatomic, strong) UIKitAppDelegate *appDelegate;
+@property (weak) IBOutlet NSMenuItem *exportHTMLButton;
+@property (weak) IBOutlet NSMenuItem *exportMarkdownButton;
 
 @end
