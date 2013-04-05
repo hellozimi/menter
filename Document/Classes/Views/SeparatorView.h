@@ -10,4 +10,6 @@
 
 @interface SeparatorView : NSView
 
+@property (nonatomic, strong) NSColor *backgroundColor;
+
 @end
