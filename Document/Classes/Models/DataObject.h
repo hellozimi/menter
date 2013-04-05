@@ -9,5 +9,6 @@
 #import <Foundation/Foundation.h>
 
 @interface DataObject : NSObject
-
+@property (nonatomic, strong) NSString *name;
+@property (nonatomic, strong) NSString *body;
 @end
