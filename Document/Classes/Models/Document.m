@@ -75,7 +75,7 @@ static NSString * const kObjectContentRegEx = @"((@content\\s)([A-Za-z0-9_-]+)\\
     aController.shouldCascadeWindows = YES;
     
     INAppStoreWindow *aWindow = (INAppStoreWindow*)[aController window];
-    aWindow.titleBarHeight = 48.0;
+    ///aWindow.titleBarHeight = 48.0;
     aWindow.showsTitle = YES;
     
     self.keyedWindow = aWindow;
