@@ -126,7 +126,6 @@
         if (self.string.length > 1) {
             
             if (self.selectedRange.location == 0) {
-                NSLog(@"Hela alltet");
                 [super insertText:insertString];
                 return;
             }
