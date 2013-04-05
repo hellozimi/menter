@@ -7,7 +7,9 @@
 //
 
 #import <Cocoa/Cocoa.h>
+#import <WebKit/WebKit.h>
 
 @interface Document : NSDocument
-
+- (IBAction)exportHTML:(id)sender;
+- (IBAction)exportMarkdown:(id)sender;
 @end
