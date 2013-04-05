@@ -10,19 +10,34 @@
 
 @implementation MonoWebView
 
-- (id)initWithFrame:(NSRect)frame
-{
-    self = [super initWithFrame:frame];
-    if (self) {
-        // Initialization code here.
-    }
+- (void)awakeFromNib {
+    [super awakeFromNib];
     
-    return self;
+    self.frameLoadDelegate = self;
+    [self setUIDelegate:self];
+    [self setEditingDelegate:self];
+    
+    [NSEvent addLocalMonitorForEventsMatchingMask:NSKeyUpMask handler:^NSEvent *(NSEvent *event) {
+        if (event.keyCode == 49) {
+            //return nil;
+        }
+        return event;
+    }];
 }
 
-- (void)drawRect:(NSRect)dirtyRect
+- (void)webView:(WebView *)sender didFinishLoadForFrame:(WebFrame *)frame {
+    
+    if (self.pageDidLoadBlock) {
+        self.pageDidLoadBlock();
+    }
+    
+}
+
+- (NSArray *)webView:(WebView *)sender contextMenuItemsForElement:(NSDictionary *)element
+    defaultMenuItems:(NSArray *)defaultMenuItems
 {
-    // Drawing code here.
+    // disable right-click context menu
+    return nil;
 }
 
 @end

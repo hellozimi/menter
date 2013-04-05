@@ -8,6 +8,10 @@
 
 #import <Foundation/Foundation.h>
 
-@interface DocumentItem : NSObject
+@class Document; 
+@interface DocumentItem : NSObject <NSCoding>
+
+@property (nonatomic, strong) NSString *fileName;
+@property (nonatomic, weak) Document *document;
 
 @end

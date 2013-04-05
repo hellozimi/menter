@@ -12,21 +12,23 @@
 		F41323BB1703965F0078D8D3 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F41323BA1703965F0078D8D3 /* main.m */; };
 		F41323BF1703965F0078D8D3 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F41323BD1703965F0078D8D3 /* Credits.rtf */; };
 		F41323C51703965F0078D8D3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F41323C31703965F0078D8D3 /* MainMenu.xib */; };
-		F413269B170396C50078D8D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F413269A170396AF0078D8D3 /* UIKit.framework */; };
 		F41326A9170398AD0078D8D3 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41326A6170398AD0078D8D3 /* AppDelegate.m */; };
-		F41326AA170398AD0078D8D3 /* UIKitAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F41326A8170398AD0078D8D3 /* UIKitAppDelegate.m */; };
-		F41326AD170398CE0078D8D3 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F41326AC170398CE0078D8D3 /* MainViewController.m */; };
+		F473269A1708D3DC00D9999C /* Document.m in Sources */ = {isa = PBXBuildFile; fileRef = F47326981708D3DC00D9999C /* Document.m */; };
+		F473269B1708D3DC00D9999C /* Document.xib in Resources */ = {isa = PBXBuildFile; fileRef = F47326991708D3DC00D9999C /* Document.xib */; };
+		F473269E1708D44100D9999C /* DocumentItem.m in Sources */ = {isa = PBXBuildFile; fileRef = F473269D1708D44100D9999C /* DocumentItem.m */; };
+		F47326A0170A40D900D9999C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = F473269F170A40D900D9999C /* icon.icns */; };
+		F47326A9170CCA6A00D9999C /* MonoWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = F47326A8170CCA6A00D9999C /* MonoWebView.m */; };
+		F493C6DD17077DCF00466AA3 /* INAppStoreWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F493C6A517077DCF00466AA3 /* INAppStoreWindow.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F493C6DF17077DCF00466AA3 /* INWindowButton.m in Sources */ = {isa = PBXBuildFile; fileRef = F493C6A817077DCF00466AA3 /* INWindowButton.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F493C6E017077DCF00466AA3 /* NSColor+INAdditions.m in Sources */ = {isa = PBXBuildFile; fileRef = F493C6AA17077DCF00466AA3 /* NSColor+INAdditions.m */; settings = {COMPILER_FLAGS = "-fno-objc-arc"; }; };
+		F493C718170799A400466AA3 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F493C717170799A400466AA3 /* WebKit.framework */; };
+		F493C71B1707C5F100466AA3 /* DataObject.m in Sources */ = {isa = PBXBuildFile; fileRef = F493C71A1707C5F100466AA3 /* DataObject.m */; };
+		F493C7211708719400466AA3 /* SeparatorView.m in Sources */ = {isa = PBXBuildFile; fileRef = F493C7201708719400466AA3 /* SeparatorView.m */; };
+		F493C7241708A21D00466AA3 /* MonoTextView.m in Sources */ = {isa = PBXBuildFile; fileRef = F493C7231708A21D00466AA3 /* MonoTextView.m */; };
 		F496841A170671F40051BA06 /* libGHMarkdownParser.a in Frameworks */ = {isa = PBXBuildFile; fileRef = F4968419170671A50051BA06 /* libGHMarkdownParser.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F4132699170396AF0078D8D3 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = F4132695170396AE0078D8D3 /* UIKit.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 8DC2EF5B0486A6940098B216;
-			remoteInfo = UIKit;
-		};
 		F4968418170671A50051BA06 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */;
@@ -44,24 +46,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		F41323AB1703965F0078D8D3 /* Document.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Document.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F41323AB1703965F0078D8D3 /* Menter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Menter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F41323AE1703965F0078D8D3 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
 		F41323B11703965F0078D8D3 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
 		F41323B21703965F0078D8D3 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
 		F41323B31703965F0078D8D3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		F41323B61703965F0078D8D3 /* Document-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Document-Info.plist"; sourceTree = "<group>"; };
+		F41323B61703965F0078D8D3 /* Menter-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Menter-Info.plist"; sourceTree = "<group>"; };
 		F41323B81703965F0078D8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		F41323BA1703965F0078D8D3 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		F41323BC1703965F0078D8D3 /* Document-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Document-Prefix.pch"; sourceTree = "<group>"; };
+		F41323BC1703965F0078D8D3 /* Menter-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Menter-Prefix.pch"; sourceTree = "<group>"; };
 		F41323BE1703965F0078D8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
 		F41323C41703965F0078D8D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainMenu.xib; sourceTree = "<group>"; };
-		F4132695170396AE0078D8D3 /* UIKit.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = UIKit.xcodeproj; path = Chameleon/UIKit/UIKit.xcodeproj; sourceTree = "<group>"; };
 		F41326A5170398AD0078D8D3 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		F41326A6170398AD0078D8D3 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		F41326A7170398AD0078D8D3 /* UIKitAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIKitAppDelegate.h; sourceTree = "<group>"; };
-		F41326A8170398AD0078D8D3 /* UIKitAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIKitAppDelegate.m; sourceTree = "<group>"; };
-		F41326AB170398CE0078D8D3 /* MainViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainViewController.h; sourceTree = "<group>"; };
-		F41326AC170398CE0078D8D3 /* MainViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MainViewController.m; sourceTree = "<group>"; };
+		F47326971708D3DC00D9999C /* Document.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Document.h; sourceTree = "<group>"; };
+		F47326981708D3DC00D9999C /* Document.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Document.m; sourceTree = "<group>"; };
+		F47326991708D3DC00D9999C /* Document.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = Document.xib; sourceTree = "<group>"; };
+		F473269C1708D44100D9999C /* DocumentItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DocumentItem.h; sourceTree = "<group>"; };
+		F473269D1708D44100D9999C /* DocumentItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DocumentItem.m; sourceTree = "<group>"; };
+		F473269F170A40D900D9999C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = icon.icns; sourceTree = "<group>"; };
+		F47326A7170CCA6A00D9999C /* MonoWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonoWebView.h; sourceTree = "<group>"; };
+		F47326A8170CCA6A00D9999C /* MonoWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonoWebView.m; sourceTree = "<group>"; };
+		F493C6A417077DCF00466AA3 /* INAppStoreWindow.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INAppStoreWindow.h; sourceTree = "<group>"; };
+		F493C6A517077DCF00466AA3 /* INAppStoreWindow.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INAppStoreWindow.m; sourceTree = "<group>"; };
+		F493C6A717077DCF00466AA3 /* INWindowButton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = INWindowButton.h; sourceTree = "<group>"; };
+		F493C6A817077DCF00466AA3 /* INWindowButton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = INWindowButton.m; sourceTree = "<group>"; };
+		F493C6A917077DCF00466AA3 /* NSColor+INAdditions.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSColor+INAdditions.h"; sourceTree = "<group>"; };
+		F493C6AA17077DCF00466AA3 /* NSColor+INAdditions.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSColor+INAdditions.m"; sourceTree = "<group>"; };
+		F493C717170799A400466AA3 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F493C7191707C5F100466AA3 /* DataObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataObject.h; sourceTree = "<group>"; };
+		F493C71A1707C5F100466AA3 /* DataObject.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DataObject.m; sourceTree = "<group>"; };
+		F493C71F1708719400466AA3 /* SeparatorView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SeparatorView.h; sourceTree = "<group>"; };
+		F493C7201708719400466AA3 /* SeparatorView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SeparatorView.m; sourceTree = "<group>"; };
+		F493C7221708A21D00466AA3 /* MonoTextView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MonoTextView.h; sourceTree = "<group>"; };
+		F493C7231708A21D00466AA3 /* MonoTextView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MonoTextView.m; sourceTree = "<group>"; };
 		F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = GHMarkdownParser.xcodeproj; path = Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -70,8 +88,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F493C718170799A400466AA3 /* WebKit.framework in Frameworks */,
 				F496841A170671F40051BA06 /* libGHMarkdownParser.a in Frameworks */,
-				F413269B170396C50078D8D3 /* UIKit.framework in Frameworks */,
 				F41323AF1703965F0078D8D3 /* Cocoa.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -82,6 +100,7 @@
 		F41323A21703965F0078D8D3 = {
 			isa = PBXGroup;
 			children = (
+				F473269F170A40D900D9999C /* icon.icns */,
 				F41323B41703965F0078D8D3 /* Document */,
 				F41323AD1703965F0078D8D3 /* Frameworks */,
 				F41323AC1703965F0078D8D3 /* Products */,
@@ -91,7 +110,7 @@
 		F41323AC1703965F0078D8D3 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				F41323AB1703965F0078D8D3 /* Document.app */,
+				F41323AB1703965F0078D8D3 /* Menter.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -99,8 +118,9 @@
 		F41323AD1703965F0078D8D3 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				F493C717170799A400466AA3 /* WebKit.framework */,
+				F493C6A217077DCF00466AA3 /* INAppStoreWindow */,
 				F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */,
-				F4132695170396AE0078D8D3 /* UIKit.xcodeproj */,
 				F41323AE1703965F0078D8D3 /* Cocoa.framework */,
 				F41323B01703965F0078D8D3 /* Other Frameworks */,
 			);
@@ -122,6 +142,7 @@
 			children = (
 				F413269F1703988A0078D8D3 /* Classes */,
 				F41323C31703965F0078D8D3 /* MainMenu.xib */,
+				F493C7061707851100466AA3 /* Resources */,
 				F41323B51703965F0078D8D3 /* Supporting Files */,
 			);
 			path = Document;
@@ -130,21 +151,13 @@
 		F41323B51703965F0078D8D3 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				F41323B61703965F0078D8D3 /* Document-Info.plist */,
+				F41323B61703965F0078D8D3 /* Menter-Info.plist */,
 				F41323B71703965F0078D8D3 /* InfoPlist.strings */,
 				F41323BA1703965F0078D8D3 /* main.m */,
-				F41323BC1703965F0078D8D3 /* Document-Prefix.pch */,
+				F41323BC1703965F0078D8D3 /* Menter-Prefix.pch */,
 				F41323BD1703965F0078D8D3 /* Credits.rtf */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		F4132696170396AE0078D8D3 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				F413269A170396AF0078D8D3 /* UIKit.framework */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		F413269F1703988A0078D8D3 /* Classes */ = {
@@ -152,6 +165,7 @@
 			children = (
 				F41326A4170398AD0078D8D3 /* Application */,
 				F41326A01703988A0078D8D3 /* Categories */,
+				F493C7131707980B00466AA3 /* Views */,
 				F41326A11703988A0078D8D3 /* Controllers */,
 				F41326A21703988A0078D8D3 /* Globals */,
 				F41326A31703988A0078D8D3 /* Models */,
@@ -169,8 +183,6 @@
 		F41326A11703988A0078D8D3 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				F41326AB170398CE0078D8D3 /* MainViewController.h */,
-				F41326AC170398CE0078D8D3 /* MainViewController.m */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -185,6 +197,13 @@
 		F41326A31703988A0078D8D3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				F493C7191707C5F100466AA3 /* DataObject.h */,
+				F493C71A1707C5F100466AA3 /* DataObject.m */,
+				F47326971708D3DC00D9999C /* Document.h */,
+				F47326981708D3DC00D9999C /* Document.m */,
+				F47326991708D3DC00D9999C /* Document.xib */,
+				F473269C1708D44100D9999C /* DocumentItem.h */,
+				F473269D1708D44100D9999C /* DocumentItem.m */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -194,10 +213,42 @@
 			children = (
 				F41326A5170398AD0078D8D3 /* AppDelegate.h */,
 				F41326A6170398AD0078D8D3 /* AppDelegate.m */,
-				F41326A7170398AD0078D8D3 /* UIKitAppDelegate.h */,
-				F41326A8170398AD0078D8D3 /* UIKitAppDelegate.m */,
 			);
 			path = Application;
+			sourceTree = "<group>";
+		};
+		F493C6A217077DCF00466AA3 /* INAppStoreWindow */ = {
+			isa = PBXGroup;
+			children = (
+				F493C6A417077DCF00466AA3 /* INAppStoreWindow.h */,
+				F493C6A517077DCF00466AA3 /* INAppStoreWindow.m */,
+				F493C6A717077DCF00466AA3 /* INWindowButton.h */,
+				F493C6A817077DCF00466AA3 /* INWindowButton.m */,
+				F493C6A917077DCF00466AA3 /* NSColor+INAdditions.h */,
+				F493C6AA17077DCF00466AA3 /* NSColor+INAdditions.m */,
+			);
+			name = INAppStoreWindow;
+			path = Modules/INAppStoreWindow;
+			sourceTree = "<group>";
+		};
+		F493C7061707851100466AA3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F493C7131707980B00466AA3 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				F493C71F1708719400466AA3 /* SeparatorView.h */,
+				F493C7201708719400466AA3 /* SeparatorView.m */,
+				F493C7221708A21D00466AA3 /* MonoTextView.h */,
+				F493C7231708A21D00466AA3 /* MonoTextView.m */,
+				F47326A7170CCA6A00D9999C /* MonoWebView.h */,
+				F47326A8170CCA6A00D9999C /* MonoWebView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		F4968415170671A50051BA06 /* Products */ = {
@@ -211,9 +262,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		F41323AA1703965F0078D8D3 /* Document */ = {
+		F41323AA1703965F0078D8D3 /* Menter */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = F41323C81703965F0078D8D3 /* Build configuration list for PBXNativeTarget "Document" */;
+			buildConfigurationList = F41323C81703965F0078D8D3 /* Build configuration list for PBXNativeTarget "Menter" */;
 			buildPhases = (
 				F41323A71703965F0078D8D3 /* Sources */,
 				F41323A81703965F0078D8D3 /* Frameworks */,
@@ -224,9 +275,9 @@
 			dependencies = (
 				F496841C1706720C0051BA06 /* PBXTargetDependency */,
 			);
-			name = Document;
+			name = Menter;
 			productName = Document;
-			productReference = F41323AB1703965F0078D8D3 /* Document.app */;
+			productReference = F41323AB1703965F0078D8D3 /* Menter.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -238,7 +289,7 @@
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = hiddencode.me;
 			};
-			buildConfigurationList = F41323A61703965F0078D8D3 /* Build configuration list for PBXProject "Document" */;
+			buildConfigurationList = F41323A61703965F0078D8D3 /* Build configuration list for PBXProject "Menter" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -254,26 +305,15 @@
 					ProductGroup = F4968415170671A50051BA06 /* Products */;
 					ProjectRef = F4968414170671A50051BA06 /* GHMarkdownParser.xcodeproj */;
 				},
-				{
-					ProductGroup = F4132696170396AE0078D8D3 /* Products */;
-					ProjectRef = F4132695170396AE0078D8D3 /* UIKit.xcodeproj */;
-				},
 			);
 			projectRoot = "";
 			targets = (
-				F41323AA1703965F0078D8D3 /* Document */,
+				F41323AA1703965F0078D8D3 /* Menter */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		F413269A170396AF0078D8D3 /* UIKit.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = UIKit.framework;
-			remoteRef = F4132699170396AF0078D8D3 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
 		F4968419170671A50051BA06 /* libGHMarkdownParser.a */ = {
 			isa = PBXReferenceProxy;
 			fileType = archive.ar;
@@ -291,6 +331,8 @@
 				F41323B91703965F0078D8D3 /* InfoPlist.strings in Resources */,
 				F41323BF1703965F0078D8D3 /* Credits.rtf in Resources */,
 				F41323C51703965F0078D8D3 /* MainMenu.xib in Resources */,
+				F473269B1708D3DC00D9999C /* Document.xib in Resources */,
+				F47326A0170A40D900D9999C /* icon.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -303,8 +345,15 @@
 			files = (
 				F41323BB1703965F0078D8D3 /* main.m in Sources */,
 				F41326A9170398AD0078D8D3 /* AppDelegate.m in Sources */,
-				F41326AA170398AD0078D8D3 /* UIKitAppDelegate.m in Sources */,
-				F41326AD170398CE0078D8D3 /* MainViewController.m in Sources */,
+				F493C6DD17077DCF00466AA3 /* INAppStoreWindow.m in Sources */,
+				F493C6DF17077DCF00466AA3 /* INWindowButton.m in Sources */,
+				F493C6E017077DCF00466AA3 /* NSColor+INAdditions.m in Sources */,
+				F493C71B1707C5F100466AA3 /* DataObject.m in Sources */,
+				F493C7211708719400466AA3 /* SeparatorView.m in Sources */,
+				F493C7241708A21D00466AA3 /* MonoTextView.m in Sources */,
+				F473269A1708D3DC00D9999C /* Document.m in Sources */,
+				F473269E1708D44100D9999C /* DocumentItem.m in Sources */,
+				F47326A9170CCA6A00D9999C /* MonoWebView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -410,19 +459,19 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Document/Document-Prefix.pch";
+				GCC_PREFIX_HEADER = "Document/Menter-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser\"",
 					"\"$(SRCROOT)/Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser/Foundation and Class Additions\"",
 				);
-				INFOPLIST_FILE = "Document/Document-Info.plist";
+				INFOPLIST_FILE = "Document/Menter-Info.plist";
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Modules/GHMarkdownParser\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Menter;
 				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
@@ -433,19 +482,19 @@
 			buildSettings = {
 				COMBINE_HIDPI_IMAGES = YES;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "Document/Document-Prefix.pch";
+				GCC_PREFIX_HEADER = "Document/Menter-Prefix.pch";
 				HEADER_SEARCH_PATHS = (
 					"\"$(SRCROOT)/Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser\"",
 					"\"$(SRCROOT)/Modules/GHMarkdownParser/GHMarkdownParser/GHMarkdownParser/Foundation and Class Additions\"",
 				);
-				INFOPLIST_FILE = "Document/Document-Info.plist";
+				INFOPLIST_FILE = "Document/Menter-Info.plist";
 				LIBRARY_SEARCH_PATHS = "\"$(SRCROOT)/Modules/GHMarkdownParser\"";
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_LDFLAGS = (
 					"-Objc",
 					"-all_load",
 				);
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Menter;
 				SDKROOT = macosx10.8;
 				WRAPPER_EXTENSION = app;
 			};
@@ -454,7 +503,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		F41323A61703965F0078D8D3 /* Build configuration list for PBXProject "Document" */ = {
+		F41323A61703965F0078D8D3 /* Build configuration list for PBXProject "Menter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F41323C61703965F0078D8D3 /* Debug */,
@@ -463,7 +512,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F41323C81703965F0078D8D3 /* Build configuration list for PBXNativeTarget "Document" */ = {
+		F41323C81703965F0078D8D3 /* Build configuration list for PBXNativeTarget "Menter" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				F41323C91703965F0078D8D3 /* Debug */,

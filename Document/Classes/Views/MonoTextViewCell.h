@@ -8,6 +8,7 @@
 
 #import <Cocoa/Cocoa.h>
 
-@interface MonoTextView : NSTextView
+@interface MonoTextViewCell : NSTextFieldCell
+
 
 @end

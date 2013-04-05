@@ -8,6 +8,14 @@
 
 #import <Cocoa/Cocoa.h>
 
+@protocol MonoTextViewDelegate;
+
 @interface MonoTextView : NSTextView
+@property (nonatomic, assign) id<NSTextViewDelegate, MonoTextViewDelegate> delegate;
+@end
+
+@protocol MonoTextViewDelegate <NSObject>
+
+- (void)monoTextViewDidUpdate:(MonoTextView *)textView;
 
 @end

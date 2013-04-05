@@ -6,23 +6,27 @@
 //  Copyright (c) 2013 hiddencode.me. All rights reserved.
 //
 
-#import "MonoTextView.h"
+#import "MonoTextViewCell.h"
 
-@implementation MonoTextView
+@implementation MonoTextViewCell
 
-- (id)initWithFrame:(NSRect)frame
-{
-    self = [super initWithFrame:frame];
+- (id)initWithCoder:(NSCoder *)aDecoder {
+    self = [super initWithCoder:aDecoder];
     if (self) {
-        // Initialization code here.
+        self.focusRingType = NSFocusRingTypeNone;
+        [self setBezeled:NO];
     }
-    
     return self;
 }
 
-- (void)drawRect:(NSRect)dirtyRect
-{
-    // Drawing code here.
+- (NSColor *)textColor {
+    return [NSColor colorWithDeviceRed:0. green:0. blue:0.251 alpha:1];
 }
+
+- (NSFont *)font {
+    return [NSFont fontWithName:@"Monaco" size:14];
+}
+
+
 
 @end
