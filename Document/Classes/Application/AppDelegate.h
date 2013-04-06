@@ -14,5 +14,5 @@
 @property (nonatomic, strong) UIKitAppDelegate *appDelegate;
 @property (weak) IBOutlet NSMenuItem *exportHTMLButton;
 @property (weak) IBOutlet NSMenuItem *exportMarkdownButton;
-
+- (IBAction)showAboutPanel:(id)sender;
 @end

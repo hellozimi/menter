@@ -9,8 +9,17 @@
 #import "AppDelegate.h"
 #import "INAppStoreWindow.h"
 
+@interface AppDelegate ()
+@property (unsafe_unretained) IBOutlet NSPanel *aboutPanel;
+
+@end
+
 @implementation AppDelegate {
     //NSDocumentController *_documentController;
+}
+
+- (IBAction)showAboutPanel:(id)sender {
+    [self.aboutPanel makeKeyAndOrderFront:self];
 }
 
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
