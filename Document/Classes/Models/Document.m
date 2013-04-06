@@ -67,6 +67,10 @@ static NSString * const kObjectContentRegEx = @"((@content\\s)([A-Za-z0-9_-]+)\\
     // If you need to use a subclass of NSWindowController or if your document supports multiple NSWindowControllers, you should remove this method and override -makeWindowControllers instead.
     return @"Document";
 }
+- (IBAction)showAboutPanel:(id)sender {
+    AppDelegate *delegate = [NSApp delegate];
+    [delegate showAboutPanel:self];
+}
 
 - (void)windowControllerDidLoadNib:(NSWindowController *)aController
 {
